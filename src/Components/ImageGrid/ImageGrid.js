@@ -2,7 +2,9 @@ import React from 'react';
 import useFirestore from '../../hooks/useFirestore';
 import { motion } from 'framer-motion';
 import './ImageGrid.css'
-// import {projectFirestore} from '../../firebase/config';
+import {projectFirestore} from '../../firebase/config';
+import { DeleteSharp } from '@material-ui/icons';
+
 
 const ImageGrid = ( {setSelectedImg} ) => {
 
@@ -14,12 +16,18 @@ const ImageGrid = ( {setSelectedImg} ) => {
                 docs && docs.map(doc => (
                     <motion.div className = 'img-wrap' key = {doc.id}
                         layout
-                        // whileHover = {{ opacity : 1 }}
+                        whileHover = {{ opacity : 1 }}
                         onClick = { () => setSelectedImg(doc.url)}>
-
                         <img src={doc.url} alt = 'uploaded_pic' />
-                        {/* <button className = 'button'
-                        onClick = {event => projectFirestore.collection(db).doc(doc.id).delete()}>Delete</button> */}
+
+                        <div  className = 'delete_btn' onClick = { (event) => {
+                            event.stopPropagation();
+                            projectFirestore.collection('images').doc(doc.id).delete()}}>
+
+                            <DeleteSharp 
+                            style={{ fontSize: '40px' , cursor: 'pointer', color : '#F87171'}} />
+                        </div>
+
                     </motion.div>
                 ))
             }

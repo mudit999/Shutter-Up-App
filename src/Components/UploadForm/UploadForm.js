@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ProgressBar from '../ProgressBar/ProgressBar';
 import './UploadForm.css';
+import {Backup} from '@material-ui/icons';
 
 const UploadForm = () => {
 
@@ -17,7 +18,7 @@ const UploadForm = () => {
             setError(null);
         }else{
             setFile(null);
-            setError("Please select image format of type png or jpeg");
+            setError("Please select image format of type png or jpeg or jpg");
         }
     }
 
@@ -26,7 +27,7 @@ const UploadForm = () => {
             <form>
                 <label>
                     <input type="file" onChange = {changeHandler}/>
-                    <span title = 'Upload picture' className = 'upload_icon'>+</span> 
+                    <Backup style = {{fontSize : '60px'}}/>
                 </label>
             
                 <div className = "output">

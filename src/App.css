@@ -2,16 +2,20 @@
 
 body {
   margin: 0px;
+  margin-bottom: 50vh;
 }
 
 .header {
   font-family: "Open Sans", sans-serif;
   display: flex;
   height: 100px;
-  padding-left: 40px;
+  padding-right: 100px;
   background-color: #60a5fa;
   color: white;
   font-size: 60px;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-end;
 }
 
 .header img {

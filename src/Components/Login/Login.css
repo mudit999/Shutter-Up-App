@@ -21,6 +21,8 @@
 }
 
 .heading {
+  font-family: "Noto Serif";
+  color: #60a5fa;
   font-weight: bold;
   font-size: large;
 }

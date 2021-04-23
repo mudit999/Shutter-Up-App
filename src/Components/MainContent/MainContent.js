@@ -12,8 +12,7 @@ const MainContent = ( {logoutHandler} ) => {
     return(
         <div className='mainContent'>
             
-            <Title />
-            <button className = 'logoutBtn' onClick = {logoutHandler}>Log out</button>
+            <Title logoutHandler = {logoutHandler}/>
             <UploadForm />
             <ImageGrid setSelectedImg = {setSelectedImg}/>
             {selectedImg && <Modal selectedImg = {selectedImg} setSelectedImg = {setSelectedImg}/>}
