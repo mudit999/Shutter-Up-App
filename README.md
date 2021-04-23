@@ -1,6 +1,6 @@
 # Shutter-Up-App
 
-It is basically a photo-gallery react app
+It is basically a Personal-Photo-Gallery React-App
 
 - It contains authentication
 - Data is stored in Firebase storage
