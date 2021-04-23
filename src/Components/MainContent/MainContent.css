@@ -1,0 +1,14 @@
+.mainContent {
+  max-width: 1100px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.logoutBtn {
+  cursor: pointer;
+  background: #60a5fa;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  text-align: center;
+}
