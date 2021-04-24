@@ -68,10 +68,13 @@ const UserAuth = () => {
         projectAuth.signOut();
     }
 
-    //to get the user by setting observer
-    const authListener = () => {
+
+    useEffect(() => {       
+        //to get the user by setting observer 
         projectAuth.onAuthStateChanged((user) => {
             if(user){
+
+                console.log(user);
                 // if user sign in
                 clearInputs();
                 setUser(user)
@@ -79,27 +82,6 @@ const UserAuth = () => {
                 setUser('')
             }
         })
-    }
-
-    // const extractedUID = () => {
-    //     let currUser = projectAuth.currentUser;
-    //     projectAuth.onAuthStateChanged(function(currUser) {
-    //         if (currUser != null) {
-    //             let uniqueID = currUser.uid;
-    //             // console.log(uniqueID);
-    //             setUid(uniqueID);
-    //           // User is signed in.
-    //         } else {
-    //           // No user is signed in.
-    //           console.log('user not signed in');
-    //         }
-    //       });
-    // }
-
-
-    useEffect(() => {
-        authListener();
-        // extractedUID();
     },[]);
 
 
