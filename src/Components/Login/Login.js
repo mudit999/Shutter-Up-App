@@ -6,7 +6,6 @@ import images from './../../images/collection.svg';
     return(
 
         <div className = 'outer-div-login'>
-
             <div className = 'demo-img'>
                 <img  src = {images} alt = 'collection_image' />
             </div>

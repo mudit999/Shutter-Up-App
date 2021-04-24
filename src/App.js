@@ -1,7 +1,9 @@
 import React from 'react';
 import UserAuth from './Components/UserAuth';
 import './App.css';
-import camera_image from '../src/images/camera2-removebg-preview.png'
+// import camera_image from '../src/images/camera2-removebg-preview.png'
+import camera_image from '../src/images/shutter.png'
+
 
 function App() {
 

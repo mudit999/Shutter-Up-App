@@ -9,6 +9,8 @@ const MainContent = ( {logoutHandler} ) => {
 
     const [ selectedImg, setSelectedImg ] = useState(null);
 
+    console.log(selectedImg);
+
     return(
         <div className='mainContent'>
             

@@ -1,15 +1,16 @@
+.outer-div-login {
+  margin-bottom: 100px;
+  align-items: center;
+}
+
 .demo-img {
   text-align: center;
   margin: 10px auto;
 }
 
-.outer-div-login {
-  margin-bottom: 100px;
-}
-
 .demo-img img {
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
 }
 
 .login {
@@ -50,7 +51,6 @@
 }
 
 .button {
-  /* font-size: large; */
   font-size: 16px;
   margin: 10px;
   padding-right: 90px;
@@ -65,7 +65,6 @@
 
 .para {
   font-size: large;
-
   margin: 10px;
   padding: 5px;
 }
