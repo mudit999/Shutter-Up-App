@@ -73,8 +73,6 @@ const UserAuth = () => {
         //to get the user by setting observer 
         projectAuth.onAuthStateChanged((user) => {
             if(user){
-
-                console.log(user);
                 // if user sign in
                 clearInputs();
                 setUser(user)
